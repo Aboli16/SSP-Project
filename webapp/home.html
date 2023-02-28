@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Management System</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:70px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+</style>
+</head>
+<body class="container-fluid">
+    <marquee><h2 class="text-danger">Student Please Register Here!</h2></marquee>
+    <form action="register" method="post" class="form card" id="frm">
+        <h2 class="bg-secondary text-white card-header">Student Registration Form</h2>
+        <table class="table table-hover">
+        <tr>
+         <td>Name</td>
+         <td><input type="text" name="userName" required></td>
+        </tr>
+        <tr>
+         <td>Mobile</td>
+         <td><input type="text" name="mobile" required></td>
+        </tr>
+        <tr>
+         <td>DOB</td>
+         <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+         <td>City</td>
+         <td><select name="city">
+         	<option value="Aurangabad">Aurangabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Nanded">Nanded</option>
+            <option value="Solapur">Solapur</option>
+            <option value="Ahmednagar">Ahmednagar</option>
+         </select></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="Male">Male &nbsp;
+            <input type="radio" name="gender" value="Female">Female
+        </td>
+        </tr>
+        <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Register</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+        </tr>
+        </table>
+        <button class="btn btn-outline-secondary"><a href="showdata">Show Students</a></button>
+    </form>
+</body>
+</html>
